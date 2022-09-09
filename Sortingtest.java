@@ -18,6 +18,6 @@ public class Sortingtest {
         for(int j = 0; j < testarray.length; j++){
             System.out.println(testarray[j]);
         }
-    }
+    }  
     
 }
