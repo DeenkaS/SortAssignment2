@@ -28,7 +28,7 @@ public class Sort {
             // for each element from i towards 1, swap the item found with the
             // item before it if it is smaller
             for (int j = i; j > 0; j--) {
-                if(array[j] < array[i]){
+                if(array[j] > array[i]){
                     int temp = array[j];
                     array[j] = array[i];
                     array[i] = temp;

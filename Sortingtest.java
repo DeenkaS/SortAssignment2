@@ -9,14 +9,16 @@ public class Sortingtest {
             testarray[i] = rnd.nextInt(100); 
         }
 
+        System.out.println("\n\n\nunsorted array: ");
         for(int k = 0; k < testarray.length; k++){
-            System.out.println(testarray[k]);
+            System.out.print(testarray[k] + " ");
         }
 
-        Sort.simple_sort(testarray);
+        Sort.insertion_sort(testarray);
 
+        System.out.println(" \n\n\nsorted array: ");
         for(int j = 0; j < testarray.length; j++){
-            System.out.println(testarray[j]);
+            System.out.print(testarray[j] + " ");
         }
     }  
     
