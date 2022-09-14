@@ -23,3 +23,10 @@ Length of array: 100 average runtime: 8533
 Length of array: 200 average runtime: 43874
 Length of array: 300 average runtime: 125669
 Length of array: 400 average runtime: 268138
+Length of array: 500 average runtime: 497141
+Length of array: 600 average runtime: 810161
+Length of array: 700 average runtime: 1278436
+Length of array: 800 average runtime: 1844577
+Length of array: 900 average runtime: 2566464
+Length of array: 1000 average runtime: 3424423
+Length of array: 1100 average runtime: 4503871
