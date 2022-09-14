@@ -2,7 +2,6 @@ public class Sort {
 
     public static void simple_sort(int[] array) {
 
-
         for (int i = 0; i < array.length - 1; i++) {
             // let's set the first candidate to the index itself
             int cand = i;
@@ -11,7 +10,7 @@ public class Sort {
                 // If the element at position j is smaller than the value
                 // at the candidate position - then you have a new candidate
                 // posistion.
-                if(array[j] < array[cand]){
+                if (array[j] < array[cand]) {
                     cand = j;
                 }
             }
@@ -22,20 +21,20 @@ public class Sort {
         }
     }
 
-    public static void insertion_sort(int[] array){
-        
+    public static void insertion_sort(int[] array) {
+
         for (int i = 0; i < array.length; i++) {
             // for each element from i towards 1, swap the item found with the
             // item before it if it is smaller
             for (int j = i; j > 0; j--) {
-                if(array[j] > array[i]){
-                    int temp = array[j];
-                    array[j] = array[i];
-                    array[i] = temp;
+                if (array[j - 1] > array[j]) {
+                    int temp = array[j - 1];
+                    array[j - 1] = array[j];
+                    array[j] = temp;
                 }
             }
-            }
-            
+        }
+
     }
 
 }
