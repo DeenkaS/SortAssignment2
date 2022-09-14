@@ -26,15 +26,13 @@ public class Sort {
         for (int i = 0; i < array.length; i++) {
             // for each element from i towards 1, swap the item found with the
             // item before it if it is smaller
-            for (int j = i; j > 0; j--) {
-                if (array[j - 1] > array[j]) {
-                    int temp = array[j - 1];
-                    array[j - 1] = array[j];
-                    array[j] = temp;
-                }
+            for (int j = i; j > 0 && array[j - 1] > array[j]; j--) {
+
+                int temp = array[j - 1];
+                array[j - 1] = array[j];
+                array[j] = temp;
+
             }
         }
-
     }
-
 }
