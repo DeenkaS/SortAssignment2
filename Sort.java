@@ -1,6 +1,6 @@
 public class Sort {
 
-    public static void simple_sort(int[] array) {
+    public static void selection_sort(int[] array) {
 
         for (int i = 0; i < array.length - 1; i++) {
             // let's set the first candidate to the index itself
@@ -35,4 +35,55 @@ public class Sort {
             }
         }
     }
+
+    public static void merge_sort(int[] array) {
+
+        if (array.length == 1) {
+            return;
+        }
+
+        int mid = array.length / 2;
+
+        int[] left = new int[array.length-mid];
+        int[] right = new int[mid];
+
+        for (int i = 0; i < right.length; i++) {
+            right[i] = array[i];
+        }
+
+        for (int i = 0; i < left.length; i++) {
+            left[i] = array[mid + i];
+        }
+
+        merge_sort(left);
+        merge_sort(right);
+
+        merge(left, right, array);
+    }
+
+    public static void merge(int[] left, int[] right, int[] array) {
+
+        int r = 0;
+        int l = 0;
+        int k = 0;
+
+        int[] merged = new int[left.length + right.length];
+
+        while(l < left.length && r <  right.length){
+            if(left[l] < right[r]){
+                merged[k] = left[l];
+                k++;
+                l++;
+            }
+            else{
+                merged[k] = right[r];
+                r++;
+                k++;
+            }
+        }
+
+
+
+    }
+
 }
