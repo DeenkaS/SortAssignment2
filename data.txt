@@ -30,3 +30,28 @@ Length of array: 800 average runtime: 1844577
 Length of array: 900 average runtime: 2566464
 Length of array: 1000 average runtime: 3424423
 Length of array: 1100 average runtime: 4503871
+Length of array: 1200 average runtime: 5882226
+Length of array: 1300 average runtime: 7372064
+Length of array: 1400 average runtime: 9148201
+Length of array: 1500 average runtime: 11105391
+Length of array: 1600 average runtime: 13487126
+
+
+
+Runtimes for merge sort
+Length of array: 100 average runtime: 9876
+Length of array: 200 average runtime: 26613
+Length of array: 300 average runtime: 53809
+Length of array: 400 average runtime: 89257
+Length of array: 500 average runtime: 142352
+Length of array: 600 average runtime: 210448
+Length of array: 700 average runtime: 275682
+Length of array: 800 average runtime: 361933
+Length of array: 900 average runtime: 449101
+Length of array: 1000 average runtime: 546198
+Length of array: 1100 average runtime: 657209
+Length of array: 1200 average runtime: 775853
+Length of array: 1300 average runtime: 926236
+Length of array: 1400 average runtime: 1081486
+Length of array: 1500 average runtime: 1239715
+Length of array: 1600 average runtime: 1400306
