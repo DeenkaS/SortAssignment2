@@ -10,7 +10,7 @@ public class Bench {
         long tsum1 = 0;
         long tsum2 = 0;
 
-        System.out.println("Runtimes for Selection sort");
+        System.out.println("Runtimes for Selection sort (n,time): ");
 
         for (int n : bencharray) {
             int[] array1 = new int[n];
@@ -26,12 +26,12 @@ public class Bench {
                 tsum += System.nanoTime() - t0;
             }
 
-            System.out.println("Length of array: " + n + " average runtime: " + (tsum / k));
+            System.out.print("(" + n + "," + (tsum / k)+ ")");
 
         }
 
         System.out.println("\n\n");
-        System.out.println("Runtimes for insertion sort");
+        System.out.println("Runtimes for insertion sort (n,time): ");
 
         for (int n : bencharray) {
             int[] array2 = new int[n];
@@ -45,12 +45,12 @@ public class Bench {
                 tsum1 += System.nanoTime() - t0;
             }
 
-            System.out.println("Length of array: " + n + " average runtime: " + (tsum1 / k));
+            System.out.print("(" + n + "," + (tsum1 / k) + ")");
 
         }
 
         System.out.println("\n\n");
-        System.out.println("Runtimes for merge sort");
+        System.out.println("Runtimes for merge sort (n,time): ");
 
         for (int n : bencharray) {
             int[] array2 = new int[n];
@@ -64,7 +64,7 @@ public class Bench {
                 tsum2 += System.nanoTime() - t0;
             }
 
-            System.out.println("Length of array: " + n + " average runtime: " + (tsum2 / k));
+            System.out.print("(" + n + "," + (tsum2 / k)+ ")");
 
         }
     }
